@@ -1,0 +1,33 @@
+*,
+*::before,
+*::after {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+    list-style: none;
+}
+
+@font-face {
+    font-family: "Roboto";
+    src: url("../fonts/Roboto-Black.ttf");
+    src: url("../fonts/Roboto-Bold.ttf") format("ttf"),
+    url("../fonts/Roboto-Light.ttf") format("ttf"),
+    url("../fonts/Roboto-Medium.ttf") format("ttf"),
+    url("../fonts/Roboto-Regular.ttf") format("ttf"),
+    url("../fonts/Roboto-Thin.ttf") format("ttf");
+
+}
+
+body {
+    direction: ltr;
+    font-family: "Roboto" !important;
+    line-height: 1.5;
+}
+
+.bg-blue {
+    background-color: #508bfc;
+}
+
+.radius {
+    border-radius: 1rem;
+}
