@@ -28,22 +28,25 @@
                         ?>
 
                                 <div class="col-sm-6 mt-2">
-                                    <div class="card">
-                                        <img src="./img/<?php echo $post['image'] ?>" class="card-img-top" alt="card image">
-                                        <div class="card-body">
-                                            <div class="d-flex justify-content-between">
-                                                <h5 class="card-title"><?php echo $post['title'] ?></h5>
-                                                <div><span class="badge bg-secondary p-2"><?php echo $post_category['title'] ?></span></div>
-                                            </div>
-                                            <p class="card-text text-justify">
-                                                <?php echo substr($post['body'], 0, 500) . "..." ?>
-                                            </p>
-                                            <div class="d-flex justify-content-between">
-                                                <a href="single.php?post=<?php echo $post['id'] ?>" class="btn btn-outline-primary stretched-link">click me</a>
-                                                <p>author: <?php echo $post['author'] ?></p>
-                                            </div>
+
+                                <div class="card h-100">
+                                    <img src="./img/<?php echo $post['image'] ?>" class="card-img-top" alt="..." height="300">
+                                    <div class="card-body">
+                                        <div class="d-flex justify-content-between">
+                                            <h5 class="card-title"><?php echo $post['title'] ?></h5>
+                                            <div><span class="badge bg-secondary p-2"><?php echo $post_category['title'] ?></span></div>
                                         </div>
+                                        <p class="card-text text-justify">
+                                        <?php echo substr($post['body'], 0, 300) . "..." ?> 
+                                        </p>
                                     </div>
+                                    <div class="card-footer d-flex justify-content-between text-muted">
+                                        <a href="single.php?post=<?php echo $post['id'] ?>" class="btn btn-outline-primary stretched-link">click me</a>
+                                        <p>author: <?php echo $post['author'] ?></p>
+                                    </div>
+                                </div>
+
+
                                 </div>
 
                             <?php
